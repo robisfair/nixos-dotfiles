@@ -15,9 +15,9 @@
   programs.bash = {
     enable = true;
     shellAliases = {
-      btw = ''echo "this isn't arch btw"'';
-      nrs = "sudo nixos-rebuild switch";
-      nrsu = "sudo nixos-rebuild switch --upgrade";
+      nrs  = "sudo nixos-rebuild switch -I nixosconfig=$HOME/nixos-dotfiles/configuration.nix";
+      nrsu = "sudo nixos-rebuild switch -I nixosconfig=$HOME/nixos-dotfiles/configuration.nix --upgrade";
+      hms  = "home-manager switch";
     };
   };
 
