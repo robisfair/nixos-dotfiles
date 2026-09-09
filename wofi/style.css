@@ -27,11 +27,23 @@ window {
     background-color: transparent;
 }
 
-#entry:selected {
-    background-color: #313244;
-    border-radius: 8px;
+/* Force readable bright text on all list items */
+#text {
+    margin: 5px;
+    color: #cdd6f4;
 }
 
-#text:selected {
+#entry {
+    border-radius: 8px;
+    background-color: transparent;
+}
+
+/* Highlight active entry */
+#entry:selected {
+    background-color: #313244;
+}
+
+#entry:selected #text {
     color: #cba6f7;
+    font-weight: bold;
 }

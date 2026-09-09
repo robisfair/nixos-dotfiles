@@ -1,0 +1,7 @@
+[DetailsView]
+PreviewSize=16
+
+[General]
+GlobalViewProps=false
+ShowToolBar=true
+ViewMode=1
