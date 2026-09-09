@@ -10,6 +10,8 @@
 
   programs.home-manager.enable = true;
 
+  nixpkgs.config.allowUnfree = true;
+
   programs.bash = {
     enable = true;
     shellAliases = {
@@ -30,6 +32,12 @@
   # Removing it here prevents Home Manager from injecting .luarc.json into your symlinked hypr directory.)
 
   home.packages = with pkgs; [
+    # Apps and TUIs
+    discord
+    lazygit
+    lazydocker
+
+    # Hypr Ecosystem
     waybar
     ghostty
     hyprpaper
