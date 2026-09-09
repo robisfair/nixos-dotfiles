@@ -1,16 +1,21 @@
-baloofileinformationrc
-dconf
-dolphinrc
-environment.d
-fontconfig
-gtk-3.0
-kitty
-mozilla
-nautilus
-nvim-backup
-pavucontrol.ini
-pulse
-session
-systemd
-trashrc
-waybar
+# Nix / NixOS
+result
+result-*
+.nix-gc*
+
+# Machine-specific hardware config (keep this local to each PC)
+hardware-configuration.nix
+
+# Temporary files & swap
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Neovim / LazyVim local state
+nvim/init.lua.backup
+.netrw*
+
+# Logs and runtime caches
+*.log
+EOF

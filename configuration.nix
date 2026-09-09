@@ -1,0 +1,1 @@
+/home/nero/nixos-dotfiles/configuration.nix
