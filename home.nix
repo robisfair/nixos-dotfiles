@@ -60,14 +60,7 @@
   # Home Manager CleanUp
   nix.gc = {
       automatic = true;
-      frequency = "weekly";
+      dates = "weekly";
       options = "--delete-older-than 7d";
-    };
-
-  # Git configuration
-  programs.git = {
-      enable = true;
-      userName = "robisfair";
-      userEmail = "neroticforcode@gmail.com";
     };
 }
